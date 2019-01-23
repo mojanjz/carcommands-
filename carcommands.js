@@ -1,3 +1,5 @@
+"use strict";
+
 var SerialPort = require("serialport");
 var port = new SerialPort("/dev/tty-usbserial1", {
   baudRate: 19200

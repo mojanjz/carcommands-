@@ -1,9 +1,9 @@
 
 
 var SerialPort = require('/home/root/node-serialport');
-SerialPort.Binding.createPort('/dev/ttyUSB0');
-
-var port = new SerialPort('/dev/ttyUSB0', {
+const ActualBinding = SerialPort.Binding;
+ActualBinding.createPort('/dev/ttyUSB0',{ echo: true, record: true });
+const port = new SerialPort('/dev/ttyUSB0', {
   baudRate: 19200
 });
 
@@ -16,8 +16,4 @@ port.on('open', function() {
   });
 });
  
-// open errors will be emitted as an error event
-port.on('error', function(err) {
-  console.log('Error: ', err.message);
-});
 

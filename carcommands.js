@@ -1,7 +1,6 @@
 
 
 var SerialPort = require('/home/root/node-serialport');
-SerialPort.Binding = require('/home/root/node-serialport/bindings');
 SerialPort.Binding.createPort('/dev/ttyUSB0');
 
 var port = new SerialPort('/dev/ttyUSB0', {

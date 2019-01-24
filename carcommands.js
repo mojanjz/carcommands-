@@ -1,7 +1,7 @@
 
 
 var SerialPort = require('/home/root/node-serialport');
-SerialPort.Binding = require('@serialport/bindings');
+SerialPort.Binding = require('/home/root/node-serialport/bindings');
 var port = new SerialPort('/dev/ttyUSB0', {
   baudRate: 19200
 });

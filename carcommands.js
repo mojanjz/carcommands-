@@ -1,6 +1,6 @@
 
 
-var SerialPort = require('serialport');
+var SerialPort = require('/home/root/node-serialport');
 var port = new SerialPort("/dev/tty-usbserial1", {
   baudRate: 19200
 });

@@ -1,7 +1,9 @@
 
 
 var SerialPort = require('/home/root/node-serialport');
-var port = new SerialPort("/dev/tty-usbserial1", {
+const MockBinding = SerialPort.Binding;
+MockBinding.createPort('/dev/tty-usbserial1', { echo: true, record: true })
+var port = new SerialPort('/dev/tty-usbserial1', {
   baudRate: 19200
 });
 

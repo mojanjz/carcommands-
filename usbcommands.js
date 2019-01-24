@@ -1,3 +1,3 @@
 
-var usb = require('/home/root/node-usb');
+var usb = require('usb');
 console.log(usb.getDeviceList());

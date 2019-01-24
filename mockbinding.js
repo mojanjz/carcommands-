@@ -1,4 +1,4 @@
-const SerialPort = require('serialport/test');
+const SerialPort = require('/home/root/node-serialport/test');
 const MockBinding = SerialPort.Binding;
  
 // Create a port and enable the echo and recording.
